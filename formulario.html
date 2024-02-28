@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+    <center>
+        <form action="index.php" method="get" enctype="text/plain">
+            <table border width="90%" style="margin: auto;" cellspacing="0">
+                <tr align="center">
+                    <td><h1>NOMBRE</h1></td>
+                    <td><h1>USO</h1></td>
+                    <td><h1>DEMOSTRACION</h1></td>
+                </tr>
+                <tr>
+                    <td>1.CAMPO DE TEXTO</td>
+                    <td>Sirve para recopilar información</td>
+                    <td><input type="text" name="" id="" placeholder="Introduce tu nombre" required maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td>2.CAMPO CONTRASEÑA</td>
+                    <td>oculta los caracteres que se escribe en el campo</td>
+                    <td><input type="password" name="password" id="password" placeholder="Introduce contraseña" required></td>
+                </tr>
+                <tr>
+                    <td>3.CASILLA VERIFICACION</td>
+                    <td>selecciona con una verificacion solo una opcion o varias</td>
+                    <td><input type="checkbox"><input type="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td>4.BOTON DE RADIO</td>
+                    <td>selecciona solo una opcion de las que se pueden mostrar</td>
+                    <td>
+                        <input type="radio" name="mascota" id="boton1">GATO <br>
+                        <input type="radio" name="mascota" id="boton2" checked>PERRO <br>
+                        <input type="radio" name="mascota" id="boton2">AVES
+                    </td>
+                </tr>
+                <tr>
+                    <td>5.CAMPO OCULTO</td>
+                    <td>No muestra nada, solo para el lado del programador</td>
+                    <td><input type="hidden" name="oculto" id="oculto" value="Mi contraseña es: 070723"></td>
+                </tr>
+                <tr>
+                    <td>6.AREA DE TEXTO</td>
+                    <td>Permite escribir un texto indefinido</td>
+                    <td><textarea name="texto" id="texto" cols="25" rows="5" nosize></textarea></td>
+                </tr>
+                <tr>
+                    <td>7.LISTA DESPEGABLE</td>
+                    <td>Funcion para desplegar mas de una opcion que ya estan predeterminadas por el programador</td>
+                    <td>
+                        <select name="lista" id="lista">
+
+                            <option value="nada"></option>
+                            <option value="gaseosa">gaseosa</option>
+                            <option value="agua simple">agua simple</option>
+                            <option value="agua de sabor">agua de sabor</option>
+                            <option value="agua michoacana">agua michoacana</option>
+                            <option value="agua mineral">agua mineral</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8.BOTON ENVIAR</td>
+                    <td>bton más importante</td>
+                    <td><input type="submit" value="Enviar"></td>
+                </tr>
+                <tr>
+                    <td>9.BOTON IMAGEN</td>
+                    <td>Una imagen que puede llevarte a algún enlace o página</td>
+                    <td><input type="image" src="/imagenes/conejo.jfif" alt=""></td>
+                </tr>
+                
+                    <tr>
+                        <td>10.BOTON BORRAR</td>
+                        <td>Borra todo lo que se coloco en el formulario</td>
+                        <td><input type="reset" value="borrar"></td>
+                    </tr>
+                    <tr>
+                        <td>11.BOTON COLOR</td>
+                        <td>Selecciona algun color para el boton</td>
+                        <td><input type="color" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>12.BOTON COMANDO</td>
+                        <td>Diferente al boton enviar</td>
+                        <td><input type="button" value="Aceptar"></td>
+                    </tr>
+                    <tr>
+                        <td>13.CAMPO FECHA</td>
+                        <td>Selecciona una fecha de todo el año</td>
+                        <td><input type="date" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>14.CAMPO FECHA Y HORA</td>
+                        <td>Selecciona la fecha y hora universal, no en todos los dispositivos se puede ver la funcion</td>
+                        <td><input type="datetime" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>15.CAMPO FECHA Y HORA LOCAL</td>
+                        <td>Selecciona la fecha y hora local y es más funcionable en dispositivos</td>
+                        <td><input type="datetime-local" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>16.CAMPO EMAIL</td>
+                        <td>Verifica un correo, tomando en cuenta el "." y el "@"</td>
+                        <td><input type="email" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>17.CAMPO ARCHIVO</td>
+                        <td>Al dar click, te lleva a tu carpeta para seleccionar un archivo</td>
+                        <td><input type="file" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>18.MES DEL AÑO</td>
+                        <td>Solo se puede seleccionar el mes de todo el año</td>
+                        <td><input type="month" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>19.NUMERICO</td>
+                        <td>Campo que solo permite números</td>
+                        <td><input type="number" name="" id="" step="0.5" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>20.SLIDER</td>
+                        <td>Barra para seleccionar algún número deslizando</td>
+                        <td><input type="range" name="" id="" value="0" min="0" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td>21.CAMPO BUSQUEDA</td>
+                        <td>Busca algún termino que se uso en el formulario</td>
+                        <td><input type="search" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>22.CAMPO TELEFONO</td>
+                        <td>Permite escribir un número telefonico</td>
+                        <td><input type="tel" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>23.CAMPO HORA</td>
+                        <td>Da la opcion de solo colocar la hora actual</td>
+                        <td><input type="time" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>24.URL</td>
+                        <td>Permite colocar un URL o direccion de alguna página web</td>
+                        <td><input type="url" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>25.SEMANA</td>
+                        <td>Selecciona solo la semana del año</td>
+                        <td><input type="week" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>26.LISTA AUTO ACOMPLETAR</td>
+                        <td>Auto acompleta lo que estas escribiendo con opciones que estan predeterminadas por el programador</td>
+                        <td>
+                            <input list="Paises" type="text"/>
+                            <datalist id="Paises">
+                                <option value="México"></option>
+                                <option value="Francia"></option>
+                                <option value="Japón"></option>
+                                <option value="Corea"></option>
+                                <option value="EUA"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>27.BARRA PROGRESIVA</td>
+                        <td>Barra que sirve para cargar algún tipo de archivo</td>
+                        <td><progress id="file" max="100" value="70">70%</progress></td>
+                    </tr>
+                    <tr>
+                        <td>28.ESTETICO</td>
+                        <td>Coloca algun tipo de margen a la etiqueta</td>
+                        <td>
+                            <fieldset>
+                                <legend>Datos Personales</legend>Nombre <br>
+                                <input type="text" name="nombre" value="" />
+                                <br/>
+                                Apellidos <br/>
+                                <input type="text" name="Apellidos" value="" />
+                                <br/>
+                                Escuela <br/>
+                                <input type="text" name="Escuela" value="" size="10" maxlength="9" />
+
+                            </fieldset>
+                        </td>
+                    </tr>
+
+            </table>
+        </form>
+    </center>
+    
+</body>
+</html>
